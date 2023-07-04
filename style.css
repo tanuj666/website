@@ -96,10 +96,10 @@ color: #abadab;
 .about-col-2{
     flex-basis: 60%;
 }
-.about-col-2 .love{
+.about-col-2 .love:hover{
     color: #ff004f;
-
 }
+
 .sub-title{
     font-size: 60px;
     font-weight: 600;
