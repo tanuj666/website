@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Por</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/6bd153fd7c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+          <div class="container">
+            <nav>
+                <ul class="sidemenu" id="menu" >
+                    <a href="#header" onclick="closeMenu()">Home</a>
+                    <a href="#about" onclick="closeMenu()">About</a>
+                    <a href="#services" onclick="closeMenu()">Services</a>
+                    <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+                    <a href="#contact" onclick="closeMenu()">Contact</a>
+                  </ul>  <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+                
+                
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Tanuj</span> Deshkari From India</h1>
+            </div>
+          </div>
+    </div>
+    <!-- ----------about---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/tg.jpeg" class="front">
+                <img src="/tw.jpeg" class="back">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hi,
+                    I'm a Web Developer,
+                    I <span class="love">love</span> to create beautiful and functional websites.
+                    Looking forward for challenging assignments that will enhance my career.
+                </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Html</li>
+                            <li>Css</li>
+                            <li>Javascript</li>
+                            <li>ReactJs</li>
+                            <li>C Language</li>
+                            <li>NodeJs</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul> <p><span>⇩</span> S.K.N.G. college,Karanja(lad).</p>
+                            <li><span>2021-22</span><br> HSC  59.17%</li>
+                        </ul><br>
+                        <ul> <p><span>⇩</span> Jagadambha college of Engineering and Technology,Yavatmal.</p>
+                            <li><span>2022-23</span><br> First Year of Computer Engineering <span>Completed</span>.</li>
+                            <li><span>2023-24</span><br> Second Year of Computer Engineering <span>Completed</span>.</li>
+                            <li><span>2024-25</span><br> Third Year of Computer Engineering <span>Completed</span>.</li>
+                            <li><span>2025-26</span><br> Final Year of Computer Engineering </li>
+                        </ul>
+                         
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span><br>Creative and detail-oriented front-end developer with hands-on experience building user-centric websites. Successfully completed projects like a responsive web design and a personal portfolio, Chtbot Development Project. Seeks to apply strong problem-solving skills to create innovative and engaging user experiences.</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------sevices---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Store your website's first-party data, so you can build smarter, more effective marketing campaigns. <br></p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- ---------portfolio-------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/chatbotss.png">
+                    <div class="layer">
+                     <h2>ChatBot Development</h2><br>
+                      <p>Chatbots provide instant answers and assistance, freeing up human agents for complex issues. They offer 24/7 support and personalized experiences, improving customer satisfaction.
+                      </p>  
+                      <a href="https://tanuj666-chatbot-chatbot-sb3kxe.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/img2.jpg">
+                    <div class="layer">
+                        <h2>Future Project</h2><br>
+                        <h3>Online Shopping App</h3>
+                         <p>The app connects you to the talented people around the world.
+                           Download it from play store.
+                         </p>  
+                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+             </div>
+            <a href="https://www.linkedin.com/in/tanuj-deshkari/details/projects/" target="_blank" rel="noopener noreferrer" class="btn">See more</a>
+        </div>
+    </div>
+    <!-------contact------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <div class="social-icons">
+                        <a href="https://github.com/tanuj666" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" id="github"></i></a>
+                        <a href="https://www.linkedin.com/in/tanuj-deshkari-262465250" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
+                    </div> 
+                    <p><i class="fas fa-envelope"></i>tanujdeshkari@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 7249187834</p>
+                   
+                    <a href="/Tanujresume up.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                         <input type="email" name="email" placeholder="Your Email" required>
+                         <textarea name="message"  rows="6"  placeholder="Your Message"></textarea>
+                         <button type="submit" class="btn btn2" >Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright  ©Tanuj. Made with <i class="fa-solid fa-heart"></i> by Tanuj Deshkari</p>
+        </div>
+    </div>
+    <script>
+    var tablinks =document.getElementsByClassName("tab-links");
+    var tabcontents =document.getElementsByClassName("tab-contents");
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-links");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+    </script>
+    <script>
+const menu = document.getElementById('menu');
+const menuBtn = document.querySelector('.menu-btn');
+
+function toggleMenu() {
+  menu.classList.toggle('active');
+}
+
+function closeMenu() {
+  menu.classList.remove('active');
+}
+
+// Close menu if clicking outside
+document.addEventListener('click', function(event) {
+  if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+    menu.classList.remove('active');
+  }
+});
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzPY7bBZGQbeM8cQxJAGQat0mrY6B1mUcUb77hjivNr84fyOltxm3XNAJEEmCw_5kdFBQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+           // Show confirmation immediately
+  msg.innerHTML = "Message sent successfully!";
+  
+  // Save form data in the background
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .catch(error => {
+      console.error('Error!', error.message);
+      // If error occurs, update message
+      msg.innerHTML = "Something went wrong!";
+    });
+
+  // Reset the form immediately
+  form.reset();
+
+  // Remove message after 5 seconds
+  setTimeout(() => msg.innerHTML = "", 5000);
+});
+      </script>
+</body>
+</html>
