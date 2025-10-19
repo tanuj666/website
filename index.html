@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,20 +13,18 @@
     <div id="header">
           <div class="container">
             <nav>
-                <img src="/Tanuj1_-removebg.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
+                <ul class="sidemenu" id="menu" >
+                    <a href="#header" onclick="closeMenu()">Home</a>
+                    <a href="#about" onclick="closeMenu()">About</a>
+                    <a href="#services" onclick="closeMenu()">Services</a>
+                    <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+                    <a href="#contact" onclick="closeMenu()">Contact</a>
+                  </ul>  <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+                
+                
             <div class="header-text">
-                <p>Web Designer</p>
-                <h1>Hi, I'm <span>Tanuj</span><br>Deshkari From India</h1>
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Tanuj</span> Deshkari From India</h1>
             </div>
           </div>
     </div>
@@ -34,7 +33,8 @@
       <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="maintanuj.png">
+                <img src="/tg.jpeg" class="front">
+                <img src="/tw.jpeg" class="back">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -51,19 +51,29 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Web Designer</span><br> Web/App Development</li>
-                            <li><span>Software Developer</span><br>Create Computer Systems </li>
+                            <li>Html</li>
+                            <li>Css</li>
+                            <li>Javascript</li>
+                            <li>ReactJs</li>
+                            <li>C Language</li>
+                            <li>NodeJs</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
-                        <ul>
+                        <ul> <p><span>⇩</span> S.K.N.G. college,Karanja(lad).</p>
+                            <li><span>2021-22</span><br> HSC  59.17%</li>
+                        </ul><br>
+                        <ul> <p><span>⇩</span> Jagadambha college of Engineering and Technology,Yavatmal.</p>
                             <li><span>2022-23</span><br> First Year of Computer Engineering <span>Completed</span>.</li>
-                             <li><span>2023-24</span><br> Second Year of Computer Engineering.</li>
+                            <li><span>2023-24</span><br> Second Year of Computer Engineering <span>Completed</span>.</li>
+                            <li><span>2024-25</span><br> Third Year of Computer Engineering <span>Completed</span>.</li>
+                            <li><span>2025-26</span><br> Final Year of Computer Engineering </li>
                         </ul>
+                         
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>No Experience</span></li>
+                            <li><span>Fresher</span><br>Creative and detail-oriented front-end developer with hands-on experience building user-centric websites. Successfully completed projects like a responsive web design and a personal portfolio, Chtbot Development Project. Seeks to apply strong problem-solving skills to create innovative and engaging user experiences.</li>
                         </ul>
                     </div>
             </div>
@@ -96,18 +106,19 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="/img1.jpg">
+                    <img src="/chatbotss.png">
                     <div class="layer">
-                     <h3>Social Media App</h3>
-                      <p>The app connects you to the talented people around the world.
-                        Download it from play store.
+                     <h2>ChatBot Development</h2><br>
+                      <p>Chatbots provide instant answers and assistance, freeing up human agents for complex issues. They offer 24/7 support and personalized experiences, improving customer satisfaction.
                       </p>  
-                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                      <a href="https://tanuj666-chatbot-chatbot-sb3kxe.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="/img2.jpg">
                     <div class="layer">
+                        <h2>Future Project</h2><br>
                         <h3>Online Shopping App</h3>
                          <p>The app connects you to the talented people around the world.
                            Download it from play store.
@@ -116,7 +127,7 @@
                     </div>
                 </div>
              </div>
-            <a href="#" class="btn">See more</a>
+            <a href="https://www.linkedin.com/in/tanuj-deshkari/details/projects/" target="_blank" rel="noopener noreferrer" class="btn">See more</a>
         </div>
     </div>
     <!-------contact------->
@@ -125,21 +136,20 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>tanujdeshkari@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i>+91 7249187834</p>
                     <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://mobile.twitter.com/deshkari_tanuj"><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href="https://instagram.com/tanuj__deshkari_patil?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/tanuj-deshkari-262465250"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="/My CV new.pdf" download class="btn btn2">Download CV</a>
+                        <a href="https://github.com/tanuj666" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" id="github"></i></a>
+                        <a href="https://www.linkedin.com/in/tanuj-deshkari-262465250" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
+                    </div> 
+                    <p><i class="fas fa-envelope"></i>tanujdeshkari@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 7249187834</p>
+                   
+                    <a href="/Tanujresume up.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                         <input type="email" name="Email" placeholder="Your Email" required>
-                         <textarea name="Message"  rows="6"  placeholder="Your Message"></textarea>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                         <input type="email" name="email" placeholder="Your Email" required>
+                         <textarea name="message"  rows="6"  placeholder="Your Message"></textarea>
                          <button type="submit" class="btn btn2" >Submit</button>
                     </form>
                     <span id="msg"></span>
@@ -165,35 +175,49 @@
      }
     </script>
     <script>
-        var sidemenu = document.getElementById("sidemenu");
+const menu = document.getElementById('menu');
+const menuBtn = document.querySelector('.menu-btn');
 
-        function openmenu(){
-            sidemenu.style.right ="0";
-        }
-        
-        function closemenu(){
-            sidemenu.style.right ="-200px";
-        }
+function toggleMenu() {
+  menu.classList.toggle('active');
+}
+
+function closeMenu() {
+  menu.classList.remove('active');
+}
+
+// Close menu if clicking outside
+document.addEventListener('click', function(event) {
+  if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+    menu.classList.remove('active');
+  }
+});
+
     </script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbybOOOaJLNpYocyCsMJxTDdYd3_ZM777dUWGLmEv4zNOh14VcJl-KnxWAwEoEVktizt/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzPY7bBZGQbeM8cQxJAGQat0mrY6B1mUcUb77hjivNr84fyOltxm3XNAJEEmCw_5kdFBQ/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
       
         form.addEventListener('submit', e => {
           e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message sent successfully"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
+           // Show confirmation immediately
+  msg.innerHTML = "Message sent successfully!";
+  
+  // Save form data in the background
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .catch(error => {
+      console.error('Error!', error.message);
+      // If error occurs, update message
+      msg.innerHTML = "Something went wrong!";
+    });
+
+  // Reset the form immediately
+  form.reset();
+
+  // Remove message after 5 seconds
+  setTimeout(() => msg.innerHTML = "", 5000);
+});
       </script>
 </body>
 </html>
-
-
