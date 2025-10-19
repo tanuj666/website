@@ -32,12 +32,86 @@ nav{
     flex-wrap: wrap;
    
 }
-
-.logo{
-    width: 10px;
-
-
+/* ===== Toggle Button ===== */
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #444;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1001;
+  transition: background 0.3s;
 }
+.menu-btn:hover { 
+    background: #ff004f; 
+}
+
+/* ===== Side Menu ===== */
+.sidemenu {
+ position: fixed;
+  top: 0;
+  right: -260px;
+  width: 250px;
+  height: 100%;
+  background: #1e1e1e;
+  box-shadow: -6px 0 20px rgba(0,0,0,0.6);
+  transition: right 0.4s ease, opacity 0.4s ease;
+  padding-top: 60px;
+  opacity: 0;
+  z-index: 1000;
+}
+
+.sidemenu a {
+  display: block;   /* important to match text width */
+  color: #ddd;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  border-bottom: none;     /* remove old border */
+  transform: translateX(50px);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  position: relative; /* needed for underline */
+}
+.sidemenu a:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* ===== Active Menu ===== */
+.sidemenu.active {
+  right: 0;
+  opacity: 1; /* fade in when active */
+}
+.sidemenu.active a {
+  transform: translateX(0);
+  opacity: 1;
+}
+.sidemenu.active a:nth-child(1) { transition-delay: 0.1s; }
+.sidemenu.active a:nth-child(2) { transition-delay: 0.2s; }
+.sidemenu.active a:nth-child(3) { transition-delay: 0.3s; }
+.sidemenu.active a:nth-child(4) { transition-delay: 0.4s; }
+.sidemenu.active a:nth-child(5) { transition-delay: 0.5s; }
+
+.sidemenu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  transition: width 0.3s ease;
+}
+.sidemenu a:hover::after {
+  width: 40%;
+}
+
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -65,13 +139,13 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 20%;
+    margin-top: 5%;
     font-size: 30px;
 
 }
 .header-text h1{
     font-size: 60px;
-    margin-top: 20px;
+    
 }
 .header-text h1 span{
     color: #ff004f;
@@ -81,18 +155,52 @@ nav ul li a:hover::after{
     padding: 80px 0;
 color: #abadab;
 }
+
 .row{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.about-col-1{
-    flex-basis: 35%;
+
+
+.about-col-1 {
+  position: relative;
+  width: 400px;      /* adjust as needed */
+  height: 620px;
+  overflow: hidden;
+  margin-top: -6%;
 }
-.about-col-1 img{
-    width: 100%;
-    border-radius: 15px;
+
+.about-col-1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keep image proportions */
+  transition: opacity 0.5s ease; /* smooth fade */
 }
+
+/* front image visible by default */
+.about-col-1 .front {
+  opacity: 1;
+}
+
+/* back image hidden by default */
+.about-col-1 .back {
+  opacity: 0;
+}
+
+/* on hover: swap visibility */
+.about-col-1:hover .front {
+  opacity: 0;
+}
+
+.about-col-1:hover .back {
+  opacity: 1;
+}
+
+
 .about-col-2{
     flex-basis: 60%;
 }
@@ -101,7 +209,7 @@ color: #abadab;
 }
 
 .sub-title{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     color: #fff;
 }
@@ -131,7 +239,7 @@ color: #abadab;
     width: 50%;
 }
 .tab-contents ul li{
-    list-style: none;
+    list-style: circle;
     margin: 10px 0;
 
 }
@@ -140,12 +248,23 @@ color: #abadab;
     font-size: 14px;
 
 }
+.tab-contents ul p{
+    font-size: 20px;
+}
+.tab-contents ul span{
+    color: #ff004f;
+    font-size: 25px;
+
+}
+
 .tab-contents{
     display: none;
 }
 .tab-contents.active-tab{
     display: block;
 }
+
+
 /*-------------services----------------*/
 
 #services{
@@ -282,6 +401,7 @@ color: #abadab;
 }
 .social-icons{
     margin-top: 30px;
+    font-size: smaller;
 }
 .social-icons a{
     text-decoration: none;
@@ -292,9 +412,40 @@ color: #abadab;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
     transform: translateY(-5px);
+    font-size: small;
 }
+
+#github{
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 3rem;
+    background: #444;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+#github:hover{
+    background: #ff004f;
+}
+#linkedin:hover{
+    background: #ff004f;
+}
+#linkedin{
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 3rem;
+    background: #444;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+
 .btn.btn2{
     display: inline-block;
     background: #ff004f; 
